@@ -17,6 +17,7 @@ BuildRequires: git-core ps2dev-binutils ps2dev-newlib wget
 
 BuildRequires: ps2dev-binutils >= %version
 Requires: ps2dev-binutils >= %version , ps2dev-newlib >= %version
+Conflicts: %name-stage1
 
 %description
 %name is the part of ps2dev toolchain.

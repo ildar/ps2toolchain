@@ -31,6 +31,7 @@ cp -al %SOURCE1 downloads/
 %install
 export _DESTDIR=%buildroot
 ./toolchain.sh 3
+mv %buildroot%prefix/ps2dev/ee/ee/lib/crt0.o{,.fromNewlib}
 
 %files
 %prefix/ps2dev/ee/ee/include
